@@ -1,4 +1,3 @@
-// Register the service worker for PWA functionality
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
     navigator.serviceWorker.register('sw.js')
@@ -64,7 +63,22 @@ function getInsult() {
     "You're about as useful as a chocolate teapot.",
     "You're so slow, even sloths are yelling 'Hurry up!'",
     "You're proof that the universe sometimes takes a coffee break.",
-    "You're like a joke without a punchline—just sad."
+    "You're like a joke without a punchline—just sad.",
+    "You're like a Windows 95 startup—slow, outdated, and full of problems.",
+    "Your brain’s so empty, even vacuum cleaners feel jealous.",
+    "You're like a broken GPS—no direction in life.",
+    "You're like a phone without Wi-Fi—totally useless.",
+    "You’re like a screen full of pop-ups, nobody asked for you.",
+    "You're as necessary as a waterproof tea bag.",
+    "You're as graceful as a bulldozer in a ballet class.",
+    "You're a text message autocorrect's worst nightmare.",
+    "You make dial-up internet look fast.",
+    "You're like a spam email—everyone ignores you.",
+    "You're so confused, even Google couldn't help you.",
+    "You have the charm of a wet sock.",
+    "You’ve got the personality of a dial tone.",
+    "You’re the human version of a missed call.",
+    "You're like a Bluetooth speaker—no one wants to connect to you."
   ];
   const randomInsult = insults[Math.floor(Math.random() * insults.length)];
   document.getElementById("insultDisplay").innerText = randomInsult;
